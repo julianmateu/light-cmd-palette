@@ -23,11 +23,22 @@ npm install light-cmd-palette
 import { initializeCommandPalette } from 'light-cmd-palette/src/commandPalette.js';
 import 'light-cmd-palette/src/commandPalette.css'
 
-initializeCommandPalette([
-            { name: "Print", action: () => window.print() },
-            { name: "Alert", action: () => alert("Executed Command 2") },
-            // Add more commands here
-        ])
+const commands = [
+    { name: "Print", action: () => window.print() },
+    { name: "Alert", action: () => alert("Executed Command 2") },
+    // Add more commands here
+]
+
+// These are the default options (optional), each element can be overriden when calling
+// the initialize function
+const options = {
+    shortcutKey: 'H', // Default key
+    ctrlKey: true,    // Use Ctrl key
+    shiftKey: true,   // Use Shift key
+    altKey: false     // Do not use Alt key by default
+};
+
+initializeCommandPalette(commands, options)
 ```
 
 ### Static files
@@ -35,7 +46,7 @@ Light Command Palette can be included in your project by directly using the Java
 
 ## Usage
 
-The Light Command Palette is launched with the `Ctrl+Shift+H` command to avoid colissions with other shortcuts. This is not customizable yet, but will be in future releases.
+The Light Command Palette is launched with the `Ctrl+Shift+H` command to avoid colissions with other shortcuts, but this can be customized to other combinations of `Ctrl`, `Shift`, `Alt` and letter keys.
 
 To use Light Command Palette in your project, simply include the CSS and JS files in the [`src`](./src) directory in your HTML:
 
@@ -73,7 +84,7 @@ const commands = [
         // ... other commands ...
     ];
 
-initializeCommandPalette(commands);
+initializeCommandPalette(commands, { shortcutKey: "P" });
 ```
 
 See [examples/index.html](./examples/index.html) for a complete example.
