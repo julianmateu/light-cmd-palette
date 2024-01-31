@@ -1,5 +1,5 @@
 # Light Command Palette
-[![Test](https://github.com/julianmateu/light-cmd/actions/workflows/test.yml/badge.svg)](https://github.com/julianmateu/light-cmd/actions/workflows/test.yml/badge.svg)
+[![Test](https://github.com/julianmateu/light-cmd-palette/actions/workflows/test.yml/badge.svg)](https://github.com/julianmateu/light-cmd-palette/actions/workflows/test.yml/badge.svg)
 
 ![A screenshot of the light command palette in a sample project](image.png)
 
@@ -12,7 +12,26 @@ Light Command Palette is a lightweight, customizable command palette built using
 - ✅ **Easy Integration**: Simple setup for any web project.
 
 ## Installation
-Currently, Light Command Palette can be included in your project by directly using the JavaScript and CSS files in the [`src`](./src) directory. Future updates may include npm package distribution.
+
+### NPM
+
+```bash
+npm install light-cmd-palette
+```
+
+```js
+import { initializeCommandPalette } from 'light-cmd-palette/src/commandPalette.js';
+import 'light-cmd-palette/src/commandPalette.css'
+
+initializeCommandPalette([
+            { name: "Print", action: () => window.print() },
+            { name: "Alert", action: () => alert("Executed Command 2") },
+            // Add more commands here
+        ])
+```
+
+### Static files
+Light Command Palette can be included in your project by directly using the JavaScript and CSS files in the [`src`](./src) directory.
 
 ## Usage
 To use Light Command Palette in your project, simply include the CSS and JS files in the [`src`](./src) directory in your HTML:
