@@ -34,6 +34,9 @@ initializeCommandPalette([
 Light Command Palette can be included in your project by directly using the JavaScript and CSS files in the [`src`](./src) directory.
 
 ## Usage
+
+The Light Command Palette is launched with the `Ctrl+Shift+H` command to avoid colissions with other shortcuts. This is not customizable yet, but will be in future releases.
+
 To use Light Command Palette in your project, simply include the CSS and JS files in the [`src`](./src) directory in your HTML:
 
 ```html

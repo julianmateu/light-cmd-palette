@@ -1,6 +1,6 @@
 {
   "name": "light-cmd-palette",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0",
   "description": "A lightweight and customizable command palette using only vanilla JS and CSS.",
   "main": "commandPalette.js",
   "type": "module",
