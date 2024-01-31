@@ -10,14 +10,17 @@
     padding: 0px;
     border-radius: 8px;
     text-wrap: wrap;
+    overflow:hidden;
 }
 
 .command-input {
     font-family: 'Courier New', Courier, monospace;
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
 }
@@ -32,7 +35,6 @@
 
 .command-list li {
     padding: 10px;
-
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -51,6 +53,7 @@
 .command-palette kbd {
     background-color: #f7f7f7;
     border: 1px solid #ccc;
+    border-bottom: 2px solid #bbb;
     border-radius: 3px;
     box-shadow: 0 1px 0 #ccc, 0 0 0 2px #fff inset;
     color: #333;

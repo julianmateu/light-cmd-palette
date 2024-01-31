@@ -5,8 +5,6 @@ const UrlToKeyboardShortcuts = {
   '/custom-shortcut.html': 'P'
 }
 
-// run a parameterized test
-
 for (const [url, shortcut] of Object.entries(UrlToKeyboardShortcuts)) {
   test.describe(`Command Palette with shortcut ${shortcut} should`, () => {
     async function openCommandPalette (page) {
