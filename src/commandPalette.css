@@ -1,0 +1,63 @@
+.command-palette {
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 25%;
+    z-index: 1000;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 600px;
+    padding: 0px;
+    border-radius: 8px;
+    text-wrap: wrap;
+}
+
+.command-input {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.command-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.command-list li {
+    padding: 10px;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.command-list li:hover, .command-list li.selected {
+    background-color: #f0f0f0;
+}
+
+.command-palette footer {
+    font-size: 12px;
+    padding-inline: 10px;
+    color: #999;
+    border-top: 1px solid #ddd;
+}
+
+.command-palette kbd {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #ccc, 0 0 0 2px #fff inset;
+    color: #333;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    line-height: 10px;
+    padding: 2px 4px;
+    white-space: nowrap;
+}

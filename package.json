@@ -1,0 +1,37 @@
+{
+  "name": "light-cmd",
+  "version": "1.0.0",
+  "description": "A lightweight and customizable command palette using only vanilla JS and CSS.",
+  "main": "commandPalette.js",
+  "type": "module",
+  "scripts": {
+    "lint:fix": "eslint --fix .",
+    "lint": "eslint .",
+    "test": "playwright test"
+  },
+  "author": "Julian Mateu <julianmateu@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianmateu/light-cmd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/julianmateu/light-cmd/issues"
+  },
+  "homepage": "https://github.com/julianmateu/light-cmd#readme",
+  "keywords": [
+    "command",
+    "palette",
+    "ui",
+    "vanilla-js",
+    "lightweight"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.41.1",
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
