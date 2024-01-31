@@ -12,7 +12,7 @@ Light Command Palette is a lightweight, customizable command palette built using
 - ✅ **Easy Integration**: Simple setup for any web project.
 
 ## Installation
-Currently, Light Command Palette can be included in your project by directly using the JavaScript and CSS files. Future updates may include npm package distribution.
+Currently, Light Command Palette can be included in your project by directly using the JavaScript and CSS files in the [`src`](./src) directory. Future updates may include npm package distribution.
 
 ## Usage
 To use Light Command Palette in your project, simply include the CSS and JS files in the [`src`](./src) directory in your HTML:
@@ -29,7 +29,7 @@ To use Light Command Palette in your project, simply include the CSS and JS file
     <!-- ... your HTML content ... -->
 
     <script type="module">
-        import { initializeCommandPalette } from './commandPalette.js';
+        import { initializeCommandPalette } from 'path/to/commandPalette.js';
         const commands = [
             { name: "Command 1", action: () => { /* Command 1 action */ } },
             { name: "Command 2", action: () => { /* Command 2 action */ } }
