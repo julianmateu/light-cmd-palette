@@ -1,14 +1,14 @@
 export function initializeCommandPalette (commands, options = {}) {
   const defaultOptions = {
-      shortcutKey: 'H', // Default key
-      ctrlKey: true,    // Use Ctrl key
-      shiftKey: true,   // Use Shift key
-      altKey: false     // Do not use Alt key by default
-  };
+    shortcutKey: 'H', // Default key
+    ctrlKey: true, // Use Ctrl key
+    shiftKey: true, // Use Shift key
+    altKey: false // Do not use Alt key by default
+  }
 
   // Merge default options with user-provided options
-  const config = { ...defaultOptions, ...options };
-  
+  const config = { ...defaultOptions, ...options }
+
   document.addEventListener('DOMContentLoaded', () => {
     const dialog = document.createElement('dialog')
     dialog.id = 'command-palette'
@@ -83,7 +83,7 @@ export function initializeCommandPalette (commands, options = {}) {
         (config.shiftKey === event.shiftKey) &&
         (config.altKey === event.altKey) &&
         (event.key.toUpperCase() === config.shortcutKey.toUpperCase())
-    ) {
+      ) {
         openCommandPalette()
       }
     })
